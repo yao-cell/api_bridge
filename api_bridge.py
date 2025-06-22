@@ -3,7 +3,7 @@ import requests
 
 app = Flask(__name__)
 
-HF_TOKEN = "hf_xxx_your_token_here"
+HF_TOKEN = "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"
 MODEL = "mistralai/Mistral-7B-Instruct-v0.3"
 
 @app.route('/get_ai_advice', methods=['POST'])
