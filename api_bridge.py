@@ -1,9 +1,9 @@
 from flask import Flask, request, jsonify
 import requests
-
+import os
 app = Flask(__name__)
 
-HF_TOKEN = "Token"
+HF_TOKEN = os.environ.get("HF_TOKEN")
 MODEL = "mistralai/Mistral-7B-Instruct-v0.3"
 
 @app.route('/get_ai_advice', methods=['POST'])
